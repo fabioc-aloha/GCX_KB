@@ -14,7 +14,7 @@ A trifecta is the fundamental unit of Copilot customization -- three files worki
 
 ## Structure
 
-```
+```text
 trifectas/{name}/
   SKILL.md
   {name}.instructions.md

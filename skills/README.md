@@ -8,7 +8,7 @@ Each subfolder contains a `SKILL.md` that can be adopted into any GCX heir repo'
 
 ## Structure
 
-```
+```text
 skills/{skill-name}/
   SKILL.md          # The skill file
   (optional assets)

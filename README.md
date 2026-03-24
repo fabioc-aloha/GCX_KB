@@ -2,7 +2,7 @@
 
 > Institutional knowledge shared across all GCX repos
 
-[![Type](https://img.shields.io/badge/Type-Knowledge_Base-blue?style=for-the-badge)](#) [![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)](#)
+[![Type](https://img.shields.io/badge/Type-Knowledge_Base-blue?style=for-the-badge)](https://github.com/fabioc-aloha/GCX_KB) [![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)](https://github.com/fabioc-aloha/GCX_KB)
 
 ## Purpose
 
@@ -12,7 +12,7 @@ This solves the institutional knowledge problem: no more reinventing wheels, no 
 
 ## Governance Model
 
-```
+```text
 GCX_Master (Curator)              GCX_KB (Global Store)           Heirs (Consumers)
 +--------------------+          +---------------------+         +------------------+
 | Creates & curates  |--(push)->| Stores globally     |         | GCX_Copilot      |
@@ -26,10 +26,12 @@ GCX_Master (Curator)              GCX_KB (Global Store)           Heirs (Consume
 ```
 
 **Who writes to GCX_KB:**
+
 - **GCX_Master** -- Primary curator. Creates, curates, and publishes content
 - **Authorized users** -- Users with KB access can also contribute directly by promoting ideas, trifectas, and knowledge
 
 **Who reads from GCX_KB:**
+
 - **Direct access** -- Authorized users can clone GCX_KB and browse directly
 - **Synced via Master** -- GCX_Master syncs relevant KB content into heir repos so users without KB access still benefit
 
@@ -39,7 +41,7 @@ GCX_Master (Curator)              GCX_KB (Global Store)           Heirs (Consume
 
 GCX_KB is a private repository. To request access:
 
-1. Email **fabioc@microsoft.com**
+1. Email **<fabioc@microsoft.com>**
 2. Include a **business justification** explaining why you need direct KB access
 3. Access is granted on a case-by-case basis
 
@@ -62,13 +64,13 @@ GCX_KB is a private repository. To request access:
 
 **Search before creating:**
 
-```
+```text
 Search the GCX Knowledge Base for [topic] before I create a new [skill/trifecta/instruction]
 ```
 
 **Promote after creating:**
 
-```
+```text
 Promote [file/skill/trifecta] to the GCX Knowledge Base
 ```
 
@@ -87,7 +89,7 @@ Promote [file/skill/trifecta] to the GCX Knowledge Base
 
 Each trifecta folder contains a complete skill + instruction + prompt set:
 
-```
+```text
 trifectas/{name}/
   SKILL.md              # What Copilot knows
   {name}.instructions.md # What Copilot enforces
@@ -100,6 +102,7 @@ trifectas/{name}/
 See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 **Key rules:**
+
 - GCX_Master is the primary curator of GCX_KB
 - Authorized users with KB access can also contribute directly
 - Heirs without KB access surface reusable content to Master for promotion
@@ -113,7 +116,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | Curator / Publisher | GCX_Master (Fabio Correa) |
 | Contributors (direct) | Authorized users with KB access |
 | Consumers (direct) | Authorized GCX team members |
-| Access requests | fabioc@microsoft.com (with business justification) |
+| Access requests | <fabioc@microsoft.com> (with business justification) |
 | Consumers (synced) | All heir repos via Master sync |
 | Review | GCX_Master maintainers |
 

@@ -17,7 +17,7 @@
 
 ### From GCX_Master (primary path)
 
-```
+```text
 1. Create or refine content in GCX_Master
 2. Validate -- content must be tested and working
 3. Generalize -- remove repo-specific paths or hardcoded values
@@ -27,7 +27,7 @@
 
 ### From Authorized Users (direct contribution)
 
-```
+```text
 1. User with KB access creates or identifies reusable content
 2. Validate -- content must be tested and working
 3. Generalize -- remove repo-specific paths or hardcoded values
@@ -37,7 +37,7 @@
 
 ### From Heirs Without KB Access (feedback path)
 
-```
+```text
 1. Heir team creates something useful locally
 2. Heir surfaces it to GCX_Master (message, PR, or meeting)
 3. GCX_Master reviews, generalizes, and curates
@@ -49,7 +49,7 @@
 
 ## Requesting Access
 
-GCX_KB is a private repository. To request access, email **fabioc@microsoft.com** with a business justification. Access is granted on a case-by-case basis.
+GCX_KB is a private repository. To request access, email **<fabioc@microsoft.com>** with a business justification. Access is granted on a case-by-case basis.
 
 Heirs can operate fully without GCX_KB access -- GCX_Master syncs all relevant content into heir repos automatically.
 
