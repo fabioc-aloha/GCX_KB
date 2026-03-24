@@ -6,27 +6,31 @@
 
 ## Purpose
 
-GCX_KB is the **single source of truth** for reusable knowledge, skills, trifectas, instructions, prompts, and patterns across the GCX organization. Every heir repo (GCX_Copilot, future team repos) checks this KB before creating new content, and promotes new discoveries back to it.
+GCX_KB is the **single source of truth** for reusable knowledge, skills, trifectas, instructions, prompts, and patterns across the GCX organization. **GCX_Master curates and publishes content here** for the benefit of all heir repos (GCX_Copilot, future team repos).
 
 This solves the institutional knowledge problem: no more reinventing wheels, no more orphaned expertise, no more inconsistent implementations across teams.
 
-## How It Works
+## Governance Model
 
 ```
-Heir Repo (e.g., GCX_Copilot)          GCX_KB (Global)
-+---------------------------+        +------------------------+
-| Need a new skill?         |--(1)-->| Check if it exists     |
-|                           |<-(2)---| Return match or "new"  |
-| Created something new?    |--(3)-->| Promote to global      |
-|                           |        | Available to all heirs |
-+---------------------------+        +------------------------+
+GCX_Master (Curator)              GCX_KB (Global Store)           Heirs (Consumers)
++--------------------+          +---------------------+         +------------------+
+| Creates & curates  |--(push)->| Stores globally     |         | GCX_Copilot      |
+| skills, trifectas, |          | Available to all    |<-(sync)-| Team repos       |
+| knowledge, etc.    |          | with access         |         | Vendor repos     |
++--------------------+          +---------------------+         +------------------+
+                                        |                               |
+                                   Direct access              Synced by Master
+                                   (if authorized)          (for those without)
 ```
 
-**Step 1 -- Check Global First**: Before creating any new skill, trifecta, instruction, prompt, or pattern, search GCX_KB for existing content.
+**Who writes to GCX_KB:** GCX_Master only. All content is curated and reviewed before publication.
 
-**Step 2 -- Adopt or Adapt**: If found, use it directly or adapt it with local context.
+**Who reads from GCX_KB:**
+- **Direct access** -- Authorized users can clone GCX_KB and browse directly
+- **Synced via Master** -- GCX_Master syncs relevant KB content into heir repos so users without KB access still benefit
 
-**Step 3 -- Promote New Work**: If you created something new and reusable, contribute it back to GCX_KB.
+**Heirs never push to GCX_KB directly.** If an heir creates something reusable, they surface it to GCX_Master for curation and promotion.
 
 ## Repository Structure
 
@@ -80,20 +84,21 @@ trifectas/{name}/
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution workflow.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
-**Quick rules:**
-- Check global KB before creating anything new locally
-- Promote reusable content back after local validation
-- Include a README with every trifecta
+**Key rules:**
+- Only GCX_Master pushes content to GCX_KB
+- Heirs surface reusable content to Master for curation
+- All content is reviewed and generalized before publication
 - Follow GCX markdown formatting standards (no `---` dividers, `--` for em dashes, `<br/>` in Mermaid)
 
 ## Ownership
 
 | Role | Owner |
 | ---- | ----- |
-| Repository | GCX_Master (Fabio Correa) |
-| Contributions | All GCX heir repos via PR |
+| Curator / Publisher | GCX_Master (Fabio Correa) |
+| Consumers (direct) | Authorized GCX team members |
+| Consumers (synced) | All heir repos via Master sync |
 | Review | GCX_Master maintainers |
 
 ## Related Repos

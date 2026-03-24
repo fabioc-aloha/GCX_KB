@@ -1,32 +1,50 @@
 # Contributing to GCX_KB
 
-> How to check, adopt, and promote knowledge across GCX repos
+> How institutional knowledge flows from GCX_Master to the global Knowledge Base
 
-## The Two Rules
+## Governance
 
-1. **Check global first** -- Before creating any new skill, trifecta, instruction, prompt, or pattern in your local repo, search GCX_KB for existing content.
-2. **Promote new work** -- If you create something reusable locally, contribute it back to GCX_KB so all heirs benefit.
+**GCX_Master is the sole curator of GCX_KB.** Heirs do not push directly.
 
-## Workflow
+| Role | Responsibility |
+| ---- | -------------- |
+| **GCX_Master** | Creates, curates, and publishes content to GCX_KB |
+| **Heirs** | Consume content (direct access or via Master sync). Surface new ideas to Master |
+| **GCX_KB** | Stores curated, generalized, reusable content globally |
 
-### Checking for Existing Content
+## How Content Gets Into GCX_KB
 
-```
-1. Clone/pull GCX_KB locally
-2. Search by name, domain, or keyword
-3. If found → adopt directly or adapt with local context
-4. If not found → create locally, validate, then promote
-```
-
-### Promoting New Content
+### From GCX_Master (primary path)
 
 ```
-1. Validate locally -- the content must be tested and working in your repo
-2. Generalize -- remove repo-specific paths or hardcoded values
-3. Add README -- every trifecta needs an adoption guide
-4. Submit PR -- fork GCX_KB, add content, open a pull request
-5. Review -- GCX_Master maintainers review and merge
+1. Create or refine content in GCX_Master
+2. Validate -- content must be tested and working
+3. Generalize -- remove repo-specific paths or hardcoded values
+4. Publish to GCX_KB with curated structure
+5. Sync relevant content to heir repos
 ```
+
+### From Heir Feedback (secondary path)
+
+```
+1. Heir team creates something useful locally
+2. Heir surfaces it to GCX_Master (message, PR, or meeting)
+3. GCX_Master reviews, generalizes, and curates
+4. GCX_Master publishes to GCX_KB
+5. All heirs benefit via sync or direct access
+```
+
+> Heirs never push to GCX_KB directly. This ensures quality control and consistency.
+
+## Sync to Heirs
+
+Not everyone in GCX will have access to GCX_KB. GCX_Master handles this by syncing relevant KB content into heir repos:
+
+- Skills and trifectas that apply to the heir's domain
+- Instructions and prompts the heir's team needs
+- Knowledge documents relevant to the heir's work
+
+This means heir users get KB content automatically, without needing GCX_KB access.
 
 ## Content Standards
 
@@ -75,8 +93,4 @@ All content follows GCX markdown standards:
 - Mermaid: `<br/>` for line breaks, GCX Brand Pastel palette, TD for >3 boxes
 - Include version history table at bottom of significant documents
 
-## Branch Strategy
-
-- `main` -- stable, reviewed content
-- Feature branches for new contributions
-- All changes via PR with at least one reviewer
+## Branch Strategy\n\n- `main` -- stable, curated content published by GCX_Master\n- Feature branches for work-in-progress content\n- All merges reviewed by GCX_Master maintainers
