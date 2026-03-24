@@ -1,15 +1,16 @@
 # Contributing to GCX_KB
 
-> How institutional knowledge flows from GCX_Master to the global Knowledge Base
+> How institutional knowledge flows into the global Knowledge Base
 
 ## Governance
 
-**GCX_Master is the sole curator of GCX_KB.** Heirs do not push directly.
+**GCX_Master is the primary curator of GCX_KB.** Authorized users with KB access can also contribute directly.
 
 | Role | Responsibility |
 | ---- | -------------- |
-| **GCX_Master** | Creates, curates, and publishes content to GCX_KB |
-| **Heirs** | Consume content (direct access or via Master sync). Surface new ideas to Master |
+| **GCX_Master** | Primary curator -- creates, curates, and publishes content to GCX_KB |
+| **Authorized users** | Users with KB access can contribute ideas, trifectas, and knowledge directly |
+| **Heirs (without KB access)** | Consume content via Master sync. Surface new ideas to Master for promotion |
 | **GCX_KB** | Stores curated, generalized, reusable content globally |
 
 ## How Content Gets Into GCX_KB
@@ -24,7 +25,17 @@
 5. Sync relevant content to heir repos
 ```
 
-### From Heir Feedback (secondary path)
+### From Authorized Users (direct contribution)
+
+```
+1. User with KB access creates or identifies reusable content
+2. Validate -- content must be tested and working
+3. Generalize -- remove repo-specific paths or hardcoded values
+4. Submit to GCX_KB (PR or direct push, depending on permissions)
+5. Follow Content Standards below
+```
+
+### From Heirs Without KB Access (feedback path)
 
 ```
 1. Heir team creates something useful locally
@@ -34,7 +45,7 @@
 5. All heirs benefit via sync or direct access
 ```
 
-> Heirs never push to GCX_KB directly. This ensures quality control and consistency.
+> Heirs without KB access go through GCX_Master. Authorized users can contribute directly.
 
 ## Requesting Access
 

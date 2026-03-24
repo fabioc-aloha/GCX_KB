@@ -16,21 +16,24 @@ This solves the institutional knowledge problem: no more reinventing wheels, no 
 GCX_Master (Curator)              GCX_KB (Global Store)           Heirs (Consumers)
 +--------------------+          +---------------------+         +------------------+
 | Creates & curates  |--(push)->| Stores globally     |         | GCX_Copilot      |
-| skills, trifectas, |          | Available to all    |<-(sync)-| Team repos       |
+| skills, trifectas, |          | Available to all    |<-(read)-| Team repos       |
 | knowledge, etc.    |          | with access         |         | Vendor repos     |
 +--------------------+          +---------------------+         +------------------+
-                                        |                               |
-                                   Direct access              Synced by Master
-                                   (if authorized)          (for those without)
+                                   ^          |                         |
+                              Authorized  Direct access          Synced by Master
+                              users can   (if authorized)      (for those without)
+                              contribute
 ```
 
-**Who writes to GCX_KB:** GCX_Master only. All content is curated and reviewed before publication.
+**Who writes to GCX_KB:**
+- **GCX_Master** -- Primary curator. Creates, curates, and publishes content
+- **Authorized users** -- Users with KB access can also contribute directly by promoting ideas, trifectas, and knowledge
 
 **Who reads from GCX_KB:**
 - **Direct access** -- Authorized users can clone GCX_KB and browse directly
 - **Synced via Master** -- GCX_Master syncs relevant KB content into heir repos so users without KB access still benefit
 
-**Heirs never push to GCX_KB directly.** If an heir creates something reusable, they surface it to GCX_Master for curation and promotion.
+**Heirs without KB access** surface reusable content to GCX_Master for curation and promotion.
 
 ## Requesting Access
 
@@ -97,8 +100,9 @@ trifectas/{name}/
 See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 **Key rules:**
-- Only GCX_Master pushes content to GCX_KB
-- Heirs surface reusable content to Master for curation
+- GCX_Master is the primary curator of GCX_KB
+- Authorized users with KB access can also contribute directly
+- Heirs without KB access surface reusable content to Master for promotion
 - All content is reviewed and generalized before publication
 - Follow GCX markdown formatting standards (no `---` dividers, `--` for em dashes, `<br/>` in Mermaid)
 
@@ -107,6 +111,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | Role | Owner |
 | ---- | ----- |
 | Curator / Publisher | GCX_Master (Fabio Correa) |
+| Contributors (direct) | Authorized users with KB access |
 | Consumers (direct) | Authorized GCX team members |
 | Access requests | fabioc@microsoft.com (with business justification) |
 | Consumers (synced) | All heir repos via Master sync |
