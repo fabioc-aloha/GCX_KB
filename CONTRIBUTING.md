@@ -36,6 +36,12 @@
 
 > Heirs never push to GCX_KB directly. This ensures quality control and consistency.
 
+## Requesting Access
+
+GCX_KB is a private repository. To request access, email **fabioc@microsoft.com** with a business justification. Access is granted on a case-by-case basis.
+
+Heirs can operate fully without GCX_KB access -- GCX_Master syncs all relevant content into heir repos automatically.
+
 ## Sync to Heirs
 
 Not everyone in GCX will have access to GCX_KB. GCX_Master handles this by syncing relevant KB content into heir repos:

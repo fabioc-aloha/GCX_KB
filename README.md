@@ -32,6 +32,16 @@ GCX_Master (Curator)              GCX_KB (Global Store)           Heirs (Consume
 
 **Heirs never push to GCX_KB directly.** If an heir creates something reusable, they surface it to GCX_Master for curation and promotion.
 
+## Requesting Access
+
+GCX_KB is a private repository. To request access:
+
+1. Email **fabioc@microsoft.com**
+2. Include a **business justification** explaining why you need direct KB access
+3. Access is granted on a case-by-case basis
+
+**Heirs can operate fully without GCX_KB access.** GCX_Master syncs all relevant content (skills, trifectas, instructions, prompts) into heir repos. Direct KB access is convenient but not required.
+
 ## Repository Structure
 
 | Folder | Contents | Description |
@@ -98,6 +108,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | ---- | ----- |
 | Curator / Publisher | GCX_Master (Fabio Correa) |
 | Consumers (direct) | Authorized GCX team members |
+| Access requests | fabioc@microsoft.com (with business justification) |
 | Consumers (synced) | All heir repos via Master sync |
 | Review | GCX_Master maintainers |
 
