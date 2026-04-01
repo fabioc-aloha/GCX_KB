@@ -1,0 +1,5 @@
+{
+  "description": "Blocks Alex extension commands (alex.initialize, alex.upgrade) from overwriting this workspace.",
+  "protected": true,
+  "workspace": "master-alex"
+}
